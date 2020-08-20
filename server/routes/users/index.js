@@ -1,11 +1,11 @@
 // Import express
-const express = require('express')
+const express = require('express');
 
 // Import users controller
-const usersController = require('./../controllers/users-controller.js')
+const usersController = require('./../../controllers/users-controller.js');
 
 // Create express router
-const router = express.Router()
+const router = express.Router();
 
 // Create rout between usersController and '/all' endpoint
 // Note:
@@ -14,7 +14,7 @@ const router = express.Router()
 // This means that all users routes
 // will be prefixed with /users'
 // i.e.: '/all' will become '/users/all'
-router.get('/all', usersController.usersGetAll)
+router.get('/all', usersController.usersGetAll);
 
 // Export router
-module.exports = router
+module.exports = router;
